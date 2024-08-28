@@ -5,165 +5,225 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amber Budd - CV</title>
     <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --background-color: #f4f4f4;
+            --text-color: #333;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
             margin: 0;
-            padding: 20px;
+            padding: 0;
+        }
+        .container {
             max-width: 800px;
             margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        h1, h2 {
-            color: #333;
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            margin-bottom: 30px;
         }
-        h2 {
-            border-bottom: 1px solid #333;
-            padding-bottom: 5px;
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
         .contact-info {
-            margin-bottom: 20px;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: var(--primary-color);
         }
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         ul {
             padding-left: 20px;
         }
+        li {
+            margin-bottom: 5px;
+        }
+        .publication {
+            margin-bottom: 15px;
+        }
+        .publication em {
+            color: var(--secondary-color);
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            header {
+                padding: 20px 0;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Amber Budd</h1>
-        <div class="contact-info">
-            <p>2035 Avalon Mist Circle<br>
-            Dardenne Prairie, MO 63368<br>
-            (314) 435-8140<br>
-            amber.budd@gmail.com<br>
-            ALB756@lindenwood.edu</p>
-        </div>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Amber Budd</h1>
+            <div class="contact-info">
+                <p>2035 Avalon Mist Circle, Dardenne Prairie, MO 63368<br>
+                (314) 435-8140 | amber.budd@gmail.com | ALB756@lindenwood.edu</p>
+            </div>
+        </header>
 
-    <section class="section">
-        <h2>Education</h2>
-        <h3>B.A. English -- Creative Writing Emphasis</h3>
-        <p><em>May 2025 (anticipated)</em><br>
-        Lindenwood University, St. Charles, MO, GPA 4.00</p>
+        <section class="section">
+            <h2>Education</h2>
+            <h3>B.A. English -- Creative Writing Emphasis</h3>
+            <p><strong>Lindenwood University, St. Charles, MO</strong><br>
+            <em>May 2025 (anticipated)</em> | GPA 4.00</p>
 
-        <h3>A.F.A Creative Writing</h3>
-        <p><em>May 2023</em><br>
-        St. Charles Community College, Cottleville, MO GPA 4.00 (Highest Honors)</p>
+            <h3>A.F.A Creative Writing</h3>
+            <p><strong>St. Charles Community College, Cottleville, MO</strong><br>
+            <em>May 2023</em> | GPA 4.00 (Highest Honors)</p>
 
-        <h3>Honor Societies:</h3>
-        <ul>
-            <li>Alpha Lambda Delta <em>April 2024</em></li>
-            <li>Phi Theta Kappa <em>February 2021</em></li>
-        </ul>
-    </section>
+            <h3>Honor Societies</h3>
+            <ul>
+                <li>Alpha Lambda Delta (April 2024)</li>
+                <li>Phi Theta Kappa (February 2021)</li>
+            </ul>
+        </section>
 
-    <section class="section">
-        <h2>Honors and Awards</h2>
-        <ul>
-            <li><strong>University Honors</strong> <em>May 2025 (anticipated)</em><br>
-            Lindenwood University</li>
-            <li><strong>Howard Barnett Essay Award</strong> <em>April 2024</em><br>
-            Lindenwood University -- College of Arts and Humanities</li>
-            <li><strong>Student of Promise in English Award</strong> <em>April 2023</em><br>
-            St. Charles Community College</li>
-            <li><strong>Dean's List</strong> <em>Fall 2023, Spring 2024</em><br>
-            Lindenwood University</li>
-            <li><strong>Dean's List</strong> <em>Fall 2020, Spring 2021, Fall 2021, Spring 2022, Fall 2022</em><br>
-            St. Charles Community College</li>
-        </ul>
-    </section>
+        <section class="section">
+            <h2>Honors and Awards</h2>
+            <ul>
+                <li><strong>University Honors</strong> - Lindenwood University (May 2025, anticipated)</li>
+                <li><strong>Howard Barnett Essay Award</strong> - Lindenwood University, College of Arts and Humanities (April 2024)</li>
+                <li><strong>Student of Promise in English Award</strong> - St. Charles Community College (April 2023)</li>
+                <li><strong>Dean's List</strong> - Lindenwood University (Fall 2023, Spring 2024)</li>
+                <li><strong>Dean's List</strong> - St. Charles Community College (Fall 2020 - Fall 2022)</li>
+            </ul>
+        </section>
 
-    <section class="section">
-        <h2>Presentations</h2>
-        <p>Budd, Amber. "The Making of a Survivor: Chopin's Use of Identity and Rebirth in The Awakening." Lindenwood University Student Academic Showcase, April 2024, St. Charles, MO. Oral Paper Presentation.</p>
-        <p>Budd, Amber. "Yours Truly: Confessions of Medieval Women." Lindenwood University, Dec. 2023, St. Charles, MO. A chapbook reading and craft talk presentation.</p>
-    </section>
+        <section class="section">
+            <h2>Presentations</h2>
+            <div class="publication">
+                <p><strong>"The Making of a Survivor: Chopin's Use of Identity and Rebirth in The Awakening"</strong><br>
+                Lindenwood University Student Academic Showcase, April 2024, St. Charles, MO. Oral Paper Presentation.</p>
+            </div>
+            <div class="publication">
+                <p><strong>"Yours Truly: Confessions of Medieval Women"</strong><br>
+                Lindenwood University, Dec. 2023, St. Charles, MO. A chapbook reading and craft talk presentation.</p>
+            </div>
+        </section>
 
-    <section class="section">
-        <h2>Publications</h2>
-        <ul>
-            <li>Budd, Amber. "Rattle and Hum." <em>Arrow Rock Literary Journal</em>, no. 16, spring 2024, arrowrockjournal.com</li>
-            <li>Budd, Amber L. "The Making of a Survivor: Chopin's Use of Identity and Rebirth in The Awakening," <em>The Confluence</em>, vol. 3, issue 2, article 6, April 15, 2024, https://doi.org/10.62608/2150-2633.1057</li>
-            <li>Budd, Amber. "The Girl Named a Snake." <em>Mid Rivers Review</em>, edited by Christina Gant, St. Charles Community College, 2023, pp. 12-15</li>
-            <li>Budd, Amber. "The Girl in the Tree." <em>Mid Rivers Review</em>, edited by Christina Gant, St. Charles Community College, 2023, pp. 16</li>
-            <li>Budd, Amber. "Rattle and Hum." <em>Winged Penny Review</em>, issue 1, Nov. 2023, www.wingedpennyreview.com</li>
-            <li>Budd, Amber. "Funhouse Mirror." <em>Mid Rivers Review</em>, edited by Michael Kuelker, St. Charles Community College, 2022, pp. 13-14</li>
-            <li>Budd, Amber. "Open Wounds." <em>Mid Rivers Review</em>, edited by Michael Kuelker, St. Charles Community College, 2022, pp. 39-43</li>
-        </ul>
-    </section>
+        <section class="section">
+            <h2>Publications</h2>
+            <div class="publication">
+                <p>"Rattle and Hum." <em>Arrow Rock Literary Journal</em>, no. 16, spring 2024.</p>
+            </div>
+            <div class="publication">
+                <p>"The Making of a Survivor: Chopin's Use of Identity and Rebirth in The Awakening." <em>The Confluence</em>, vol. 3, issue 2, article 6, April 15, 2024.</p>
+            </div>
+            <div class="publication">
+                <p>"The Girl Named a Snake." <em>Mid Rivers Review</em>, edited by Christina Gant, St. Charles Community College, 2023, pp. 12-15.</p>
+            </div>
+            <div class="publication">
+                <p>"The Girl in the Tree." <em>Mid Rivers Review</em>, edited by Christina Gant, St. Charles Community College, 2023, pp. 16.</p>
+            </div>
+            <div class="publication">
+                <p>"Rattle and Hum." <em>Winged Penny Review</em>, issue 1, Nov. 2023.</p>
+            </div>
+            <div class="publication">
+                <p>"Funhouse Mirror." <em>Mid Rivers Review</em>, edited by Michael Kuelker, St. Charles Community College, 2022, pp. 13-14.</p>
+            </div>
+            <div class="publication">
+                <p>"Open Wounds." <em>Mid Rivers Review</em>, edited by Michael Kuelker, St. Charles Community College, 2022, pp. 39-43.</p>
+            </div>
+        </section>
 
-    <section class="section">
-        <h2>Experience</h2>
-        <h3>Assistant Editor <em>January -- May 2024</em></h3>
-        <p>Arrow Rock Literary Journal, Lindenwood University</p>
-        <p>Worked with a staff of 24 to produce Lindenwood University's undergraduate online literary journal.</p>
-        <h4>Tasks</h4>
-        <ul>
-            <li>Researched and presented on literary journals for context of trends and user experiences</li>
-            <li>Collaborate with editorial staff to determine online theme</li>
-            <li>Discuss submission requirements from the submitter's point of view</li>
-            <li>Critically analyzed and discussed submitted work, both written and verbally</li>
-            <li>Reflected on personal choices and how that bias may impact submission selection</li>
-            <li>Submitted to literary journal to understand the process of what a submitter experiences</li>
-            <li>Designed marking pieces for social media to encourage student submissions</li>
-            <li>Supported social media campaign for Arrow Rock submissions and release date</li>
-            <li>Completed LinkedIn Learning certificate on using WordPress</li>
-        </ul>
+        <section class="section">
+            <h2>Experience</h2>
+            <h3>Assistant Editor <em>(January - May 2024)</em></h3>
+            <p><strong>Arrow Rock Literary Journal, Lindenwood University</strong></p>
+            <p>Worked with a staff of 24 to produce Lindenwood University's undergraduate online literary journal.</p>
+            <h4>Key Responsibilities:</h4>
+            <ul>
+                <li>Researched and presented on literary journals for context of trends and user experiences</li>
+                <li>Collaborated with editorial staff to determine online theme</li>
+                <li>Critically analyzed and discussed submitted work, both written and verbally</li>
+                <li>Designed marketing pieces for social media to encourage student submissions</li>
+                <li>Completed LinkedIn Learning certificate on using WordPress</li>
+            </ul>
 
-        <h3>Writing Tutor <em>October 2022 -- August 2023</em></h3>
-        <p>ACE Tutoring Center, St. Charles Community College</p>
-        <p>In-person and virtual tutoring</p>
-        <h4>Tasks</h4>
-        <ul>
-            <li>Completed training in tutoring of ESL students</li>
-            <li>Teach tools and strategies to succeed in writing</li>
-            <li>Assist with technical writing errors</li>
-            <li>Teach students how to research, find pertinent information, and use it in writing</li>
-            <li>Teach MLA format</li>
-        </ul>
-    </section>
+            <h3>Writing Tutor <em>(October 2022 - August 2023)</em></h3>
+            <p><strong>ACE Tutoring Center, St. Charles Community College</strong></p>
+            <p>Provided in-person and virtual tutoring services.</p>
+            <h4>Key Responsibilities:</h4>
+            <ul>
+                <li>Completed training in tutoring of ESL students</li>
+                <li>Taught tools and strategies to succeed in writing</li>
+                <li>Assisted with technical writing errors</li>
+                <li>Taught students how to research, find pertinent information, and use it in writing</li>
+                <li>Instructed on MLA format</li>
+            </ul>
+        </section>
 
-    <section class="section">
-        <h2>Relevant Coursework</h2>
-        <h3>Writing</h3>
-        <ul>
-            <li>Introduction to Creative Writing</li>
-            <li>Publishing Workshop</li>
-            <li>Advanced Creative Writing Workshop</li>
-            <li>Arrow Rock Literary Journal</li>
-            <li>Creative Writing Portfolio</li>
-            <li>Writing Advanced Nonfiction</li>
-            <li>Fiction Writing</li>
-            <li>Senior Capstone in English Studies</li>
-            <li>Poetry Writing</li>
-            <li>World Building</li>
-            <li>Writing Science Fiction, Fantasy, and Surreal</li>
-            <li>History of the English Language</li>
-            <li>Reading & Writing of the Young Adult Novel</li>
-        </ul>
+        <section class="section">
+            <h2>Relevant Coursework</h2>
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                <div style="flex: 0 0 48%;">
+                    <h3>Writing</h3>
+                    <ul>
+                        <li>Introduction to Creative Writing</li>
+                        <li>Publishing Workshop</li>
+                        <li>Advanced Creative Writing Workshop</li>
+                        <li>Arrow Rock Literary Journal</li>
+                        <li>Creative Writing Portfolio</li>
+                        <li>Writing Advanced Nonfiction</li>
+                        <li>Fiction Writing</li>
+                        <li>Senior Capstone in English Studies</li>
+                        <li>Poetry Writing</li>
+                        <li>World Building</li>
+                        <li>Writing Science Fiction, Fantasy, and Surreal</li>
+                        <li>History of the English Language</li>
+                        <li>Reading & Writing of the Young Adult Novel</li>
+                    </ul>
+                </div>
+                <div style="flex: 0 0 48%;">
+                    <h3>Literature</h3>
+                    <ul>
+                        <li>Introduction to Poetry</li>
+                        <li>Methods of Literary Study (Honors)</li>
+                        <li>World Mythology</li>
+                        <li>Victorians: Vile or Virtuous? (Honors)</li>
+                        <li>Mythology in Western Culture (Honors)</li>
+                        <li>Writing about Life in America (Honors)</li>
+                        <li>World Literature: Medieval World</li>
+                        <li>Politics, Passion, Poetry & Problems: Romantic Movement (Honors)</li>
+                        <li>Finding Home: Space, Place, and Identity in American Literature</li>
+                        <li>Medieval Afterlives: Modern Reception of Medieval Literature - Medieval Women (Honors)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-        <h3>Literature</h3>
-        <ul>
-            <li>Introduction to Poetry</li>
-            <li>Methods of Literary Study (Honors)</li>
-            <li>World Mythology</li>
-            <li>Victorians: Vile or Virtuous? (Honors)</li>
-            <li>Mythology in Western Culture (Honors)</li>
-            <li>Writing about Life in America (Honors)</li>
-            <li>World Literature: Medieval World</li>
-            <li>Politics, Passion, Poetry & Problems: Romantic Movement (Honors)</li>
-            <li>Finding Home: Space, Place, and Identity in American Literature</li>
-            <li>Medieval Afterlives: Modern Reception of Medieval Literature - Medieval Women (Honors)</li>
-        </ul>
-    </section>
-
-    <section class="section">
-        <h2>Co-curricular Activities</h2>
-        <h3>SCC Coffee House <em>2021 -- Present</em></h3>
-        <p>Regular attendee and presenter of poetry and short story excerpts at St. Charles Community College Coffee House, an open mic style event hosted by the SCC English department for students and community members to present their own original works.</p>
-    </section>
+        <section class="section">
+            <h2>Co-curricular Activities</h2>
+            <h3>SCC Coffee House <em>(2021 - Present)</em></h3>
+            <p>Regular attendee and presenter of poetry and short story excerpts at St. Charles Community College Coffee House, an open mic style event hosted by the SCC English department for students and community members to present their own original works.</p>
+        </section>
+    </div>
 </body>
 </html>
