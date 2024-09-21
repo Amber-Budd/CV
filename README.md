@@ -1,4 +1,6 @@
 # Capstone - CV and Cover letter for Graduate School
-1.[CV - For graduate school application](CV.html)
+[CV - For graduate school application](CV.html)
 
-2.[Cover Letter - for graduate school application at Lindenwood](coverletter.html)
+[Cover Letter - for graduate school application at Lindenwood](coverletter.html)
+
+[Notes on Updated CV](changednote.html)
